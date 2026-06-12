@@ -196,7 +196,3 @@ Do not commit real Google API keys, JWT secrets, passwords, or production URLs.
 - Ride service auth fails in microservices: use the same `JWT_SECRET` for user, captain, and ride services.
 - No captains receive rides: captain must be logged in, joined to Socket.IO, active, and within 2km in monolith mode; in microservice mode captain availability must be toggled on.
 - RabbitMQ unavailable: services keep running and retry locally, but queue flows need RabbitMQ started.
-
-## Resume Explanation
-
-RideFlow demonstrates the same product in two backend styles. The monolith shows end-to-end ride booking with real-time Socket.IO and Google Maps. The microservices version separates user, captain, and ride ownership behind a gateway, then uses RabbitMQ queues and long-polling to decouple ride creation from captain/user notifications.
