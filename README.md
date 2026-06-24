@@ -1,6 +1,6 @@
 # RideFlow
 
-RideFlow is a final-year Uber-style ride-hailing project built from the supplied monolith MERN reference and the microservices refactor reference.
+RideFlow is a Uber-style ride-hailing project built from the supplied monolith MERN reference and the microservices refactor reference.
 
 ## Architecture
 
